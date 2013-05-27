@@ -1,0 +1,29 @@
+{% load i18n %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>{% trans "Libre Village 2013" %}</title>
+
+        <link href="{{MEDIA_URL}}uni-form/css/uni-form.css" media="all" rel="stylesheet"/>
+
+        <link href="{{MEDIA_URL}}uni-form/css/default.uni-form.css" media="all" rel="stylesheet"/>
+
+
+
+        <!-- Script -->
+        <link rel="stylesheet" href="{{MEDIA_URL}}style.css" type="text/css">
+
+    </head>
+    <body>
+
+        <div id="container">
+
+            <h1>{% trans "Libre Village 2013" %}</h1>
+            <h2>{% trans "Apply for a booth" %}</h1>
+        {% block content %}
+        {% endblock %}
+        </div>
+    </body>
+</html>

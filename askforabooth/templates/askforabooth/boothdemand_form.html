@@ -1,0 +1,12 @@
+{% extends "askforabooth/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form method="post" class="uniForm">
+    {{ form|crispy }}
+    <div class="buttonHolder">
+    <input class="primaryAction" type="submit" value="{% trans "Submit" %}" />
+    </div>
+    {% csrf_token %}
+</form>
+{% endblock %}
