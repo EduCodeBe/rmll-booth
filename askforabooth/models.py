@@ -17,3 +17,5 @@ class boothDemand(models.Model):
     whattosell = models.TextField(_(u'What will you sell?'), help_text=_('GNU/Linux CD-ROM, t-shirts, books, stickers...'), blank=True)
     specific_needs = models.TextField(_(u'Specific needs'), help_text=_('You will have WiFi, 220V, table and chairs'), blank=True)
 
+    def __unicode__(self):
+        return self.name
