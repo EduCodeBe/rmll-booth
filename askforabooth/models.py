@@ -13,7 +13,7 @@ class boothDemand(models.Model):
     mail = models.EmailField(_(u'Email address'))
     internet = models.CharField(_(u'Website'), max_length=128)
     whattoshow = models.TextField(_(u'What will you show at the LSM village?'))
-    sizeoftheboost = models.CharField(_(u'Which size do you need for yout boost?'), blank=True, help_text=_('We just want an estimation'), max_length=128)
+    sizeoftheboost = models.CharField(_(u'Which size do you need for yout booth?'), blank=True, help_text=_('We just want an estimation'), max_length=128)
     whattosell = models.TextField(_(u'What will you sell?'), help_text=_('GNU/Linux CD-ROM, t-shirts, books, stickers...'), blank=True)
     specific_needs = models.TextField(_(u'Specific needs'), help_text=_('You will have WiFi, 220V, table and chairs'), blank=True)
 
