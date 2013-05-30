@@ -1,8 +1,37 @@
 {% extends BASE_TEMPLATE %}
 {% load i18n %}
 {% block content %}
-<form method="post" class="uniForm">
-    {{ form.as_p }}
+<form method="post">
+    {% if form.non_field_errors %}
+    <div class="message error">
+        <ul>
+            {% for error in form.non_field_errors %}
+            <li>{{error}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% for field in form %}
+    <div class="form-item">
+        <label for="{{ field.html_name }}">{{ field.label }}{% if field.required%} <span class="form-required">*</span>{% endif%}</label>
+        {{ field }}
+        {% if field.errors %}
+        <div class="message error">
+        <ul>
+            {% for error in form.errors %}
+            <li>{{error}}</li>
+            {% endfor %}
+        </ul>
+        </div>
+        {% endif %}
+        {% if field.help_text %}
+        <div class="message error">
+        <div class="description">
+            {{ field.help_text }}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
     <div class="buttonHolder">
     <input class="primaryAction" type="submit" value="{% trans "Submit" %}" />
     </div>
