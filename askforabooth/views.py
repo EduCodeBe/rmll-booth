@@ -13,6 +13,10 @@ class BoothDemandCreateView(CreateView):
 
 class BoothDemandCreateViewFr(BoothDemandCreateView):
 
+    def post(self, request, *args, **kwargs):
+        translation.activate('fr')
+        request.LANGUAGE_CODE = 'fr'
+        return super(BoothDemandCreateViewFr, self).post(request, *args, **kwargs)
     def get(self, request, *args, **kwargs):
         translation.activate('fr')
         request.LANGUAGE_CODE = 'fr'
@@ -20,6 +24,10 @@ class BoothDemandCreateViewFr(BoothDemandCreateView):
 
 class BoothDemandCreateViewEn(BoothDemandCreateView):
 
+    def post(self, request, *args, **kwargs):
+        translation.activate('en')
+        request.LANGUAGE_CODE = 'en'
+        return super(BoothDemandCreateViewEn, self).post(request, *args, **kwargs)
     def get(self, request, *args, **kwargs):
         translation.activate('en')
         request.LANGUAGE_CODE = 'en'
@@ -27,8 +35,12 @@ class BoothDemandCreateViewEn(BoothDemandCreateView):
 
 class BoothDemandCreateViewNl(BoothDemandCreateView):
 
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         translation.activate('nl')
         request.LANGUAGE_CODE = 'nl'
+        return super(BoothDemandCreateViewNl, self).post(request, *args, **kwargs)
+    def get(self, request, *args, **kwargs):
+        translation.activate('nl')
+        request.language_code = 'nl'
         return super(BoothDemandCreateViewNl, self).get(request, *args, **kwargs)
 
