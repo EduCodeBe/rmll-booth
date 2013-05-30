@@ -1,13 +1,17 @@
 {% extends BASE_TEMPLATE %}
 {% load i18n %}
 {% load custom_css %}
+
+{% block title %}{% trans "Libre Village 2013" %}{% endblock %}
+
 {% block languages %}
 {% for link in LANGUAGE_LINKS %}
 <li class="{%if forloop.first %}first{%elif forloop.last %}last{%else %}middle{%endif%}">
-<a href="{{link.1}}" class="language-link">{%trans link.0 %}</a>
+<a href="{{link.1}}" class="language-link">{{link.0}}</a>
 </li>
 {% endfor %}
 {% endblock %}
+
 {% block content %}
 <form method="post">
     {% if form.non_field_errors %}
