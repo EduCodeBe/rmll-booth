@@ -4,7 +4,7 @@
 {% block content %}
 <form method="post">
     {% if form.non_field_errors %}
-    <div class="message error">
+    <div class="messages error">
         <ul>
             {% for error in form.non_field_errors %}
             <li>{{error}}</li>
@@ -16,18 +16,16 @@
     <div class="form-item">
         <label for="{{ field.html_name }}">{{ field.label }}{% if field.field.required %} <span class="form-required">*</span>{% endif%}</label>
         {% if field.errors %}
-        {{ field|add_class:"error" }}
+        {{ field }}
         {% else %}
         {{ field }}
         {% endif %}
         {% if field.errors %}
-        <div class="message error">
-        <ul>
             {% for error in field.errors %}
-            <li>{{error}}</li>
-            {% endfor %}
-        </ul>
+        <div class="error">
+            {{error}}
         </div>
+            {% endfor %}
         {% endif %}
         {% if field.help_text %}
         <div class="description">
