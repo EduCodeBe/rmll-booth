@@ -1,5 +1,6 @@
 {% extends BASE_TEMPLATE %}
 {% load i18n %}
+{% load custom_css %}
 {% block content %}
 <form method="post">
     {% if form.non_field_errors %}
@@ -13,12 +14,16 @@
     {% endif %}
     {% for field in form %}
     <div class="form-item">
-        <label for="{{ field.html_name }}">{{ field.label }}{% if field.required%} <span class="form-required">*</span>{% endif%}</label>
+        <label for="{{ field.html_name }}">{{ field.label }}{% if field.field.required %} <span class="form-required">*</span>{% endif%}</label>
+        {% if field.errors %}
+        {{ field|add_class:"error" }}
+        {% else %}
         {{ field }}
+        {% endif %}
         {% if field.errors %}
         <div class="message error">
         <ul>
-            {% for error in form.errors %}
+            {% for error in field.errors %}
             <li>{{error}}</li>
             {% endfor %}
         </ul>
