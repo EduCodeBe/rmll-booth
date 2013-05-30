@@ -180,7 +180,16 @@ LOGGING = {
 }
 
 SUCCESS_TEMPLATE = "askforabooth/success.html"
-BASE_TEMPLATE = "askforabooth/base.html"
+LANGUAGE_LINKS = (
+    (ugettext('French'), "/fr"),
+    (ugettext('Dutch'), "/nl"),
+    (ugettext('English'), "/"),
+    )
+BASE_TEMPLATE = {
+    "fr": "askforabooth/base.html",
+    "nl": "askforabooth/base.html",
+    "en": "askforabooth/base.html",
+    }
 SUCCESS_URL = {
             'fr': '/success',
             'nl': '/success',
