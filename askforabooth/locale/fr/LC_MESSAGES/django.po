@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-28 02:24-0500\n"
+"POT-Creation-Date: 2013-05-30 01:52-0500\n"
 "PO-Revision-Date: 2013-05-27 23:40+0200\n"
 "Last-Translator: Julien Pivotto <roidelapluie@gmail.com>\n"
 "Language: fr\n"
@@ -77,30 +77,35 @@ msgid "You will have WiFi, 220V, table and chairs"
 msgstr "Déjà fourni: WiFi, 220V, table et chaises."
 
 #: askforabooth/templates/askforabooth/base.html:7
-#: askforabooth/templates/askforabooth/base.html:23
+#: askforabooth/templates/askforabooth/base.html:19
+#: askforabooth/templates/askforabooth/boothdemand_form.html:5
 msgid "Libre Village 2013"
 msgstr "Village du Libre 2013"
 
-#: askforabooth/templates/askforabooth/base.html:24
+#: askforabooth/templates/askforabooth/base.html:20
 msgid "Apply for a booth"
 msgstr "Requête de stand"
 
-#: askforabooth/templates/askforabooth/boothdemand_form.html:8
+#: askforabooth/templates/askforabooth/boothdemand_form.html:49
 msgid "Submit"
 msgstr "Envoyer"
 
-#: askforabooth/templates/askforabooth/success.html:5
+#: askforabooth/templates/askforabooth/success.html:4
 msgid "Thank you"
 msgstr "Merci"
 
-#: askforabooth/templates/askforabooth/success.html:6
+#: askforabooth/templates/askforabooth/success.html:5
 msgid "We will contact you as soon as possible."
 msgstr "Nous vous contacterons aussi vite que possible."
 
-#: booths/settings.py:27
+#: booths/settings.py:27 booths/settings.py:184
 msgid "French"
 msgstr "Français"
 
-#: booths/settings.py:28
+#: booths/settings.py:28 booths/settings.py:186
 msgid "English"
 msgstr "Anglais"
+
+#: booths/settings.py:185
+msgid "Dutch"
+msgstr "Néerlandais"
