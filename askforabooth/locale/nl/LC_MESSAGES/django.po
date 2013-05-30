@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-30 01:52-0500\n"
+"POT-Creation-Date: 2013-05-30 02:24-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,11 @@ msgstr ""
 msgid "Apply for a booth"
 msgstr ""
 
-#: askforabooth/templates/askforabooth/boothdemand_form.html:49
+#: askforabooth/templates/askforabooth/boothdemand_form.html:16
+msgid "Booth request for the Libre Village 2013"
+msgstr ""
+
+#: askforabooth/templates/askforabooth/boothdemand_form.html:50
 msgid "Submit"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-30 01:52-0500\n"
+"POT-Creation-Date: 2013-05-30 02:24-0500\n"
 "PO-Revision-Date: 2013-05-27 23:40+0200\n"
 "Last-Translator: Julien Pivotto <roidelapluie@gmail.com>\n"
 "Language: fr\n"
@@ -86,7 +86,11 @@ msgstr "Village du Libre 2013"
 msgid "Apply for a booth"
 msgstr "Requête de stand"
 
-#: askforabooth/templates/askforabooth/boothdemand_form.html:49
+#: askforabooth/templates/askforabooth/boothdemand_form.html:16
+msgid "Booth request for the Libre Village 2013"
+msgstr "Demande de stand pour le Village du Libre 2013"
+
+#: askforabooth/templates/askforabooth/boothdemand_form.html:50
 msgid "Submit"
 msgstr "Envoyer"
 
