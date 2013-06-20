@@ -1,4 +1,4 @@
-from booths import settings
+from juri import settings
 
 
 def add_templates_vars(request):

@@ -1,0 +1,147 @@
+# French translation of the "ask for a booth" app
+# Copyright (C) 2013 roidelapluie
+# This file is distributed under the same license as the rmll-booth package.
+# Julien Pivotto <roidelapluie@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-20 14:09-0500\n"
+"PO-Revision-Date: 2013-05-27 23:40+0200\n"
+"Last-Translator: Julien Pivotto <roidelapluie@gmail.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: juri/settings.py:27 juri/settings.py:184
+msgid "French"
+msgstr "Français"
+
+#: juri/settings.py:28 juri/settings.py:186
+msgid "English"
+msgstr "Anglais"
+
+#: juri/settings.py:185
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: subscribeform/models.py:7
+msgid "First name"
+msgstr "Prénom"
+
+#: subscribeform/models.py:8
+msgid "Last name"
+msgstr "Nom"
+
+#: subscribeform/models.py:9
+msgid "Birth date"
+msgstr "Date de naissance"
+
+#: subscribeform/models.py:10
+msgid "Email address"
+msgstr "Adresse e-mail"
+
+#: subscribeform/templates/subscribeform/base.html:19
+msgid "JURI WORKSHOP"
+msgstr "JURI WORKSHOP"
+
+#: subscribeform/templates/subscribeform/base.html:20
+msgid "Register"
+msgstr "S'inscrire"
+
+#: subscribeform/templates/subscribeform/boothdemand_form.html:5
+msgid "JURI Workshop"
+msgstr "Juri Workshop"
+
+#: subscribeform/templates/subscribeform/boothdemand_form.html:16
+msgid "Registration to the JURI Workshop"
+msgstr "Inscription au JURI Workshop"
+
+#: subscribeform/templates/subscribeform/boothdemand_form.html:18
+msgid ""
+"\n"
+"On Tuesday 7/9 afternoon, at the <strong>European Parliament</strong>, a "
+"<strong><a href=\"http://schedule2013.rmll.info/programme/plenieres/article/"
+"juri-workshop-et-the-european\">special JURI Workshop</a></strong> will be "
+"dedicated to free software..\n"
+msgstr ""
+"\n"
+"Le mardi 9 juillet après-midi, une <strong><a href=\"http://schedule2013."
+"rmll.info/programme/plenieres/article/juri-workshop-et-the-european\">suite "
+"de conférences sur les logiciels libres</a></strong> aura lieu au Parlement "
+"européen, avec des conférenciers venus du monde entier.\n"
+
+#: subscribeform/templates/subscribeform/boothdemand_form.html:23
+msgid ""
+"\n"
+"Please register there <strong>before July, 4th</strong> to attend this event "
+"at the European Parliament.\n"
+msgstr ""
+"Il est indispensable de s'inscrire <strong>avant le 4 juillet</strong> afin "
+"d'y participer."
+
+#: subscribeform/templates/subscribeform/boothdemand_form.html:60
+msgid "Submit"
+msgstr "Envoyer"
+
+#: subscribeform/templates/subscribeform/success.html:4
+msgid "Thank you"
+msgstr "Merci"
+
+#: subscribeform/templates/subscribeform/success.html:5
+msgid "We will contact you as soon as possible."
+msgstr "Nous vous contacterons aussi vite que possible."
+
+#~ msgid "Name of the association/group/community"
+#~ msgstr "Nom de l'association / groupe / communauté"
+
+#~ msgid "Start year of the association/group/community"
+#~ msgstr "Année de démarrage de l'association / groupe / communauté"
+
+#~ msgid "Objectives and action fields"
+#~ msgstr "Objectif(s) et champs d'action"
+
+#~ msgid "Number of members"
+#~ msgstr "Effectif / Nombre de membres"
+
+#~ msgid "City/state"
+#~ msgstr "Ville / Région"
+
+#~ msgid "Country"
+#~ msgstr "Pays"
+
+#~ msgid "Website"
+#~ msgstr "Site internet"
+
+#~ msgid "What will you show at the LSM village?"
+#~ msgstr "Qu'allez-vous présenter ?"
+
+#~ msgid "Which size do you need for yout booth?"
+#~ msgstr "Taille du stand souhaitée"
+
+#~ msgid "We just want an estimation"
+#~ msgstr "Nous voulons juste une estimation"
+
+#~ msgid "What will you sell?"
+#~ msgstr "Allez-vous vendre des articles ? Si oui, quels types d'articles ? "
+
+#~ msgid "GNU/Linux CD-ROM, t-shirts, books, stickers..."
+#~ msgstr "T-shirts, livres, CDs de GNU/LInux, ..."
+
+#~ msgid "Specific needs"
+#~ msgstr "Besoins spéciaux "
+
+#~ msgid "You will have WiFi, 220V, table and chairs"
+#~ msgstr "Déjà fourni: WiFi, 220V, table et chaises."
+
+#~ msgid "Libre Village 2013"
+#~ msgstr "Village du Libre 2013"
+
+#~ msgid "Apply for a booth"
+#~ msgstr "Requête de stand"
+
+#~ msgid "Booth request for the Libre Village 2013"
+#~ msgstr "Demande de stand pour le Village du Libre 2013"

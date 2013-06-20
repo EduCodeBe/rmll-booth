@@ -1,6 +1,6 @@
 from django.views.generic import CreateView
-from askforabooth.models import boothDemand
-from booths import settings
+from subscribeform.models import boothDemand
+from juri import settings
 from django.utils import translation
 
 

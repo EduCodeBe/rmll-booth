@@ -1,4 +1,4 @@
-# Django settings for booths project.
+# Django settings for juri project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/tmp/booths.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/tmp/juri.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -107,7 +107,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
-    'askforabooth.context_processors.add_templates_vars',
+    'subscribeform.context_processors.add_templates_vars',
     )
 
 MIDDLEWARE_CLASSES = (
@@ -123,10 +123,10 @@ MIDDLEWARE_CLASSES = (
 
 
 
-ROOT_URLCONF = 'booths.urls'
+ROOT_URLCONF = 'juri.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'booths.wsgi.application'
+WSGI_APPLICATION = 'juri.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -145,7 +145,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'askforabooth',
+    'subscribeform',
 )
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
@@ -179,16 +179,16 @@ LOGGING = {
     }
 }
 
-SUCCESS_TEMPLATE = "askforabooth/success.html"
+SUCCESS_TEMPLATE = "subscribeform/success.html"
 LANGUAGE_LINKS = (
     (ugettext('French'), "/fr"),
     (ugettext('Dutch'), "/nl"),
     (ugettext('English'), "/"),
     )
 BASE_TEMPLATE = {
-    "fr": "askforabooth/base.html",
-    "nl": "askforabooth/base.html",
-    "en": "askforabooth/base.html",
+    "fr": "subscribeform/base.html",
+    "nl": "subscribeform/base.html",
+    "en": "subscribeform/base.html",
     }
 SUCCESS_URL = {
             'fr': '/success',

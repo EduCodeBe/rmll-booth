@@ -2,7 +2,7 @@
 {% load i18n %}
 {% load custom_css %}
 
-{% block title %}{% trans "Libre Village 2013" %}{% endblock %}
+{% block title %}{% trans "JURI Workshop" %}{% endblock %}
 
 {% block languages %}
 {% for link in LANGUAGE_LINKS %}
@@ -13,7 +13,17 @@
 {% endblock %}
 
 {% block content %}
-<h1>{% trans "Booth request for the Libre Village 2013" %}</h1>
+<h1>{% trans "Registration to the JURI Workshop" %}</h1>
+<p>
+{% blocktrans %}
+On Tuesday 7/9 afternoon, at the <strong>European Parliament</strong>, a <strong><a href="http://schedule2013.rmll.info/programme/plenieres/article/juri-workshop-et-the-european">special JURI Workshop</a></strong> will be dedicated to free software..
+{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}
+Please register there <strong>before July, 4th</strong> to attend this event at the European Parliament.
+{% endblocktrans %}
+</p>
 <form method="post">
     {% if form.non_field_errors %}
     <div class="messages error">
