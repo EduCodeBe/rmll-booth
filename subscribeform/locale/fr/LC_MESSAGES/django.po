@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-20 14:09-0500\n"
+"POT-Creation-Date: 2013-06-20 14:33-0500\n"
 "PO-Revision-Date: 2013-05-27 23:40+0200\n"
 "Last-Translator: Julien Pivotto <roidelapluie@gmail.com>\n"
 "Language: fr\n"
@@ -39,6 +39,10 @@ msgstr "Nom"
 #: subscribeform/models.py:9
 msgid "Birth date"
 msgstr "Date de naissance"
+
+#: subscribeform/models.py:9
+msgid "YYYY-MM-DD"
+msgstr "AAAA-MM-JJ"
 
 #: subscribeform/models.py:10
 msgid "Email address"
@@ -80,8 +84,10 @@ msgid ""
 "Please register there <strong>before July, 4th</strong> to attend this event "
 "at the European Parliament.\n"
 msgstr ""
+"\n"
 "Il est indispensable de s'inscrire <strong>avant le 4 juillet</strong> afin "
 "d'y participer."
+"\n"
 
 #: subscribeform/templates/subscribeform/boothdemand_form.html:60
 msgid "Submit"

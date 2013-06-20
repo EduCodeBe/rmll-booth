@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-20 14:09-0500\n"
+"POT-Creation-Date: 2013-06-20 14:33-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jo <WINFIXIT@GMAIL.COM>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,10 @@ msgstr "Naam"
 #: subscribeform/models.py:9
 msgid "Birth date"
 msgstr "Geboortedatum"
+
+#: subscribeform/models.py:9
+msgid "YYYY-MM-DD"
+msgstr ""
 
 #: subscribeform/models.py:10
 msgid "Email address"
