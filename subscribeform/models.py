@@ -10,4 +10,4 @@ class boothDemand(models.Model):
     mail = models.EmailField(_(u'Email address'))
 
     def __unicode__(self):
-        return self.name
+        return self.first_name
